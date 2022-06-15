@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Friends</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div id="fp-nav" class="fp-left">
+        <ul>
+            <li><a href="#1Page" class="active"><span></span></a>
+            </li>
+            <li><a href="#2Page" class=""><span></span></a>
+            </li>
+            <li><a href="#3Page" class=""><span></span></a>
+            </li>
+            <li><a href="#4Page" class=""><span></span></a>
+            </li>
+            <li><a href="#5Page" class=""><span></span></a>
+            </li>
+            <li><a href="#6Page" class=""><span></span></a>
+            </li>
+            <li><a href="#7Page" class=""><span></span></a>
+            </li>
+        </ul>
+    </div>
+    <a href="tel:+788001001999" rel="nofollow" class="btn-call">
+        <div class="btn-call__ico">
+            <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M53.2317 37.7892C50.0993 37.4026 46.9889 36.8546 43.913 36.1473C43.162 35.8963 42.359 35.8434 41.5816 35.9937C40.8042 36.144 40.0788 36.4924 39.4755 37.0052C38.6915 37.804 36.4284 40.0375 34.0765 42.345C25.6501 38.2027 18.8353 31.3828 14.6995 22.9531C16.9922 20.6013 19.137 18.3529 20.0097 17.569C20.5225 16.9657 20.8709 16.2403 21.0212 15.4629C21.1715 14.6855 21.1186 13.8824 20.8676 13.1315C20.1594 10.0508 19.6114 6.9354 19.2257 3.79794C19.1844 3.39841 19.0621 3.01147 18.8664 2.66072C18.6707 2.30997 18.4056 2.00275 18.0873 1.75779C17.769 1.51282 17.4041 1.33524 17.0149 1.23588C16.6257 1.13651 16.2204 1.11744 15.8236 1.17982H3.22112C2.70092 1.22678 2.21397 1.45576 1.84599 1.82644C1.47801 2.19713 1.2526 2.68574 1.20945 3.20627C0.395912 14.5811 6.74154 26.7546 8.02841 29.0917V29.1804L8.20591 29.5207C12.8125 37.5103 19.4455 44.1432 27.4351 48.7498V48.7498L28.0859 49.1196C31.0442 50.6875 42.8036 56.6042 53.7938 55.7907C54.3196 55.7542 54.8153 55.5317 55.192 55.1631C55.5687 54.7945 55.8019 54.3039 55.8499 53.779V41.1913C55.9123 40.7945 55.8932 40.3892 55.7938 40C55.6944 39.6108 55.5169 39.2459 55.2719 38.9276C55.0269 38.6093 54.7197 38.3442 54.369 38.1485C54.0182 37.9528 53.6313 37.8305 53.2317 37.7892Z"
+                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+    </a>
+    <header class="header">
+        <div class="container header-container">
+            <div class="header-top">
+                <div class="header-top-left">
+                    <a href="./index.html">
+                        <svg width="22" height="32" viewBox="0 0 22 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.84296 4.86697L0.509277 7.21212L4.05225 10.7715L6.38593 8.42794L2.84296 4.86697Z"
+                                fill="#F6851F" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M6.27304 8.31261C5.62915 7.66545 4.58644 7.66545 3.94416 8.31101C3.30188 8.95656 3.30188 10.0042 3.94576 10.6513C4.58965 11.2985 5.63236 11.2985 6.27464 10.6529C6.91852 10.0074 6.91692 8.95977 6.27304 8.31261Z"
+                                fill="#F6851F" />
+                            <path d="M3.30111 5.93063H0V29.672H3.30111V5.93063Z" fill="#F8961D" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13.375 15.4634L0.689465 28.2063C0.273022 28.509 0.000732422 29.0024 0.000732422 29.5583C0.000732422 30.4793 0.743923 31.2258 1.6617 31.2258C2.06533 31.2258 2.43532 31.0816 2.72363 30.8398L2.73004 30.8462L15.7102 17.8069L13.375 15.4634Z"
+                                fill="#E01F27" />
+                            <path
+                                d="M16.1497 16.9787C16.3422 16.0853 15.7777 15.2058 14.8887 15.0142C13.9997 14.8226 13.1231 15.3915 12.9306 16.2848C12.7381 17.1781 13.3027 18.0577 14.1916 18.2493C15.0806 18.4409 15.9573 17.872 16.1497 16.9787Z"
+                                fill="#CA2127" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.65374 4.37039C0.745573 4.37039 0.00878906 5.11206 0.00878906 6.02673C0.00878906 6.9414 0.745573 7.68306 1.65374 7.68306C2.56191 7.68306 3.29869 6.9414 3.29869 6.02673C3.30029 5.11206 2.56351 4.37039 1.65374 4.37039Z"
+                                fill="#F8961D" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.8301 21.2253L15.498 23.5689L19.0394 27.1282L21.3731 24.7847L17.8301 21.2253Z"
+                                fill="#2C9C48" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.9383 21.347C17.2944 20.6999 16.2533 20.6999 15.611 21.3454C14.9688 21.991 14.9704 23.0386 15.6126 23.6842C16.2565 24.3313 17.2976 24.3313 17.9399 23.6858C18.5838 23.0402 18.5822 21.9926 17.9383 21.347Z"
+                                fill="#2C9C48" />
+                            <path d="M21.8825 2.32803H18.583V26.0646H21.8825V2.32803Z" fill="#4CB853" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20.2223 0.7742C19.8187 0.7742 19.4487 0.918369 19.162 1.16025L19.1556 1.15384L6.18335 14.1899L8.51543 16.5334L21.1929 3.79373C21.6094 3.49098 21.8817 2.9976 21.8817 2.44175C21.8817 1.52067 21.1385 0.7742 20.2223 0.7742Z"
+                                fill="#28A992" />
+                            <path
+                                d="M8.96504 15.69C9.1452 14.7941 8.56854 13.9224 7.67703 13.7431C6.78552 13.5638 5.91677 14.1447 5.73661 15.0406C5.55645 15.9365 6.13311 16.8081 7.02462 16.9875C7.91613 17.1668 8.78488 16.5859 8.96504 15.69Z"
+                                fill="#1E9680" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20.2287 24.3137C19.3205 24.3137 18.5837 25.0554 18.5837 25.9701C18.5837 26.8847 19.3205 27.6264 20.2287 27.6264C21.1369 27.6264 21.8736 26.8847 21.8736 25.9701C21.8736 25.0554 21.1369 24.3137 20.2287 24.3137Z"
+                                fill="#4CB853" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="header-top-right">
+                    <a href="tel:+788001001999" class="header-phone">8&nbsp;800&nbsp;100 19 99</a>
+                    <div class="header-currency">
+                        <p class="header-currency__dollar">usd</p>
+                        <div class="header-currency-group">
+                            <p class="header-currency-group__value">61.550</p>
+                            <p class="header-currency-group__value">61.553</p>
+                        </div>
+                    </div>
+                    <div class="header-buttons">
+                        <a href="#" class="header-account">Личный кабинет</a>
+                        <a href="tel:+788001001999" class="header-btn-call btn">Заказать звонок</a>
+                        <div class="burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <ul class="header-list">
+                    <li class="header-list-item">
+                        <a href="./about.html" class="header-list__link">О&nbsp;компании</a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="#" class="header-list__link">Банковские услуги</a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="#" class="header-list__link">Lifestyle</a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="./contacts.html" class="header-list__link">Контакты</a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="#" class="header-list__link">События</a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="./investments.html" class="header-list__link">Инвестиции</a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="#" class="header-list__link">Акции</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header--adaptive">
+            <button class="header-cross"><svg width="18" height="18" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 30L2 2M2 30L30 2L2 30Z" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="header-adaptive-wrap">
+                <ul class="header-list header-list--adaptive">
+                    <li class="header-list-item">
+                        <a href="./about.html" class="header-list__link">О&nbsp;компании</a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="#" class="header-list__link">Банковские услуги</a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="#" class="header-list__link">Lifestyle</a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="./contacts.html" class="header-list__link">Контакты</a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="#" class="header-list__link">События</a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="./investments.html" class="header-list__link">Инвестиции</a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="#" class="header-list__link">Акции</a>
+                    </li>
+                </ul>
+                <div class="header-top-right header-top-right--adaptive">
+                    <a href="tel:+788001001999" class="header-phone header-phone--adaptive">8&nbsp;800&nbsp;100 19
+                        99</a>
+                    <div class="header-currency header-currency--adaptive">
+                        <p class="header-currency__dollar">usd</p>
+                        <div class="header-currency-group">
+                            <p class="header-currency-group__value">61.550</p>
+                            <p class="header-currency-group__value">61.553</p>
+                        </div>
+                    </div>
+                    <div class="header-buttons">
+                        <a href="#" class="header-account header-account--adaptive">Личный кабинет</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="site" id="fullpage">
+        <section class="hero about-company section invest fp-tableCell active" data-anchor="1Page">
+            <div class="container hero-container">
+                <div class="hero-wrapper">
+                    <h1 class="hero__title">
+                        Инвестиции
+                    </h1>
+                    <p class="hero__text invest__text">
+                        Управляйте инвестиционным портфелем самостоятельно
+                        или доверьте его экспертам
+                    </p>
+                    <ul class="hero-benefits-list">
+                        <li class="hero-benefits-list-item">
+                            <video autoplay muted loop src="img/hero9.webm" alt="GIF"></video>
+                            <p class="hero-benefits-item__text">Профессиональная аналитика</p>
+                        </li>
+                        <li class="hero-benefits-list-item">
+                            <video autoplay muted loop src="img/hero10.webm" alt="GIF"></video>
+                            <p class="hero-benefits-item__text">20-летний
+                                опыт работы</p>
+                        </li>
+                        <li class="hero-benefits-list-item">
+                            <video autoplay muted loop src="img/hero11.webm" alt="GIF"></video>
+                            <p class="hero-benefits-item__text">
+                                Актуальные инвестиционные идеи
+                            </p>
+                        </li>
+                        <li class="hero-benefits-list-item">
+                            <video autoplay muted loop src="img/hero12.webm" alt="GIF"></video>
+                            <p class="hero-benefits-item__text">
+                                Комплексная экспертиза активов
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="events section invest1 fp-tableCell" data-anchor="2Page">
+            <div class="container events-container">
+                <div class="events-wrap">
+                    <h2 class="events__title">Верный курс для ваших инвестиций</h2>
+                    <p class="events__text invest-ev__text">
+                        Инвестиционный портфель всегда должен быть достаточно диверсифицирован, ликвиден и приносить
+                        доход. Личный финансист подберет активы и составит из них портфель, который будет отвечать
+                        выбранному инвестиционному курсу.
+                    </p>
+                    <a href="" class="events_link btn">СОСТАВИТЬ ПОРТФЕЛЬ</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="inv-benefits section fp-tableCell" data-anchor="3Page">
+            <div class="container inv-benefits-container">
+                <ul class="inv-benefits-list">
+                    <li class="inv benefits-item">
+                        <img src="img/benefits1.webp" alt="Преимущество" class="inv-benefits-left">
+                        <div class="inv-benefits-right">
+                            <h3 class="inv-benefits-item__title">Структурные продукты</h3>
+                            <p class="inv-benefits-item__text">Разумный баланс для вложений — вы выбираете уровень
+                                участия
+                                и ограничиваете риски, мы подбираем подходящие инвестиционные инструменты
+                                на основе ваших желаний и возможностей.</p>
+                            <ul class="inv-benefits-item-list">
+                                <li class="inv-benefits-item-list-item">
+                                    <p class="inv-benefits__benefits blue">Более 100 продуктов</p>
+                                </li>
+                                <li class="inv-benefits-item-list-item">
+                                    <p class="inv-benefits__benefits blue">Инвестиции от 3 месяцев</p>
+                                </li>
+                                <li class="inv-benefits-item-list-item">
+                                    <p class="inv-benefits__benefits blue">Предсказуемые результаты</p>
+                                </li>
+                            </ul>
+                            <a href="#" class="inv-benefits-item__link btn">персональная консультация</a>
+                        </div>
+                    </li>
+                    <li class="inv benefits-item">
+                        <img src="img/benefits2.webp" alt="Преимущество" class="inv-benefits-left">
+                        <div class="inv-benefits-right">
+                            <h3 class="inv-benefits-item__title">Инвестиционные фонды</h3>
+                            <p class="inv-benefits-item__text">Команда опытных управляющих разработает оптимальные
+                                решения
+                                и филигранно распределит средства в инвестиционные инструменты.</p>
+                            <ul class="inv-benefits-item-list">
+                                <li class="inv-benefits-item-list-item">
+                                    <p class="inv-benefits__benefits blue">Высокая ликвидность</p>
+                                </li>
+                                <li class="inv-benefits-item-list-item">
+                                    <p class="inv-benefits__benefits blue">Перспективные инвестиции</p>
+                                </li>
+                                <li class="inv-benefits-item-list-item">
+                                    <p class="inv-benefits__benefits blue">15‑летний опыт работы с ПИФ</p>
+                                </li>
+                            </ul>
+                            <a href="#" class="inv-benefits-item__link btn">обсудить с экспертом</a>
+                        </div>
+                    </li>
+                </ul>
+        </section>
+        <section class="inv-benefits section fp-tableCell" data-anchor="4Page">
+            <div class="container inv-benefits-container">
+                <ul class="inv-benefits-list">
+                    <li class="inv benefits-item">
+                        <img src="img/benefits3.webp" alt="Преимущество" class="inv-benefits-left">
+                        <div class="inv-benefits-right">
+                            <h3 class="inv-benefits-item__title">Доверительное управление</h3>
+                            <p class="inv-benefits-item__text">Различные инвестиционные стратегии позволят достигнуть
+                                любую финансовую цель, будь то надежное сохранение капитала или его прирост.</p>
+                            <ul class="inv-benefits-item-list">
+                                <li class="inv-benefits-item-list-item">
+                                    <p class="inv-benefits__benefits blue">Российский и глобальный рынки</p>
+                                </li>
+                                <li class="inv-benefits-item-list-item">
+                                    <p class="inv-benefits__benefits blue">Полная прозрачность</p>
+                                </li>
+                                <li class="inv-benefits-item-list-item">
+                                    <p class="inv-benefits__benefits blue">Регулярные отчеты</p>
+                                </li>
+                            </ul>
+                            <a href="#" class="inv-benefits-item__link btn">персональная консультация</a>
+                        </div>
+                    </li>
+                    <li class="inv benefits-item">
+                        <img src="img/benefits4.webp" alt="Преимущество" class="inv-benefits-left">
+                        <div class="inv-benefits-right">
+                            <h3 class="inv-benefits-item__title">Брокерское обслуживание</h3>
+                            <p class="inv-benefits-item__text">Управляйте своими инвестициями самостоятельно с помощью
+                                комплекса
+                                брокерских VIP-услуг1, включающих индивидуальное сопровождение
+                                операций на фондовом рынке, профессиональные консультации и доступ
+                                к эксклюзивной аналитике.</p>
+                            <ul class="inv-benefits-item-list">
+                                <li class="inv-benefits-item-list-item">
+                                    <p class="inv-benefits__benefits blue">Все биржи с единого счет</p>
+                                </li>
+                                <li class="inv-benefits-item-list-item">
+                                    <p class="inv-benefits__benefits blue">Лучшие торговые площадки</p>
+                                </li>
+                                <li class="inv-benefits-item-list-item">
+                                    <p class="inv-benefits__benefits blue">Аналитическая поддержка</p>
+                                </li>
+                            </ul>
+                            <a href="#" class="inv-benefits-item__link btn">обсудить с экспертом</a>
+                        </div>
+                    </li>
+                </ul>
+        </section>
+        <section class="inv-benefits section fp-tableCell" data-anchor="5Page">
+            <div class="container inv-benefits-container">
+                <ul class="inv-benefits-list">
+                    <li class="inv benefits-item">
+                        <img src="img/benefits5.webp" alt="Преимущество" class="inv-benefits-left">
+                        <div class="inv-benefits-right">
+                            <h3 class="inv-benefits-item__title">Инвестиционное и накопительное страхование</h3>
+                            <p class="inv-benefits-item__text">Защитит вас и ваших близких в непредвиденных ситуациях,
+                                обезопасит капитал и позволит получать инвестиционный доход без уплаты налогов. БКС
+                                Ультима работает в партнерстве с крупнейшими страховыми компаниями.</p>
+                            <ul class="inv-benefits-item-list">
+                                <li class="inv-benefits-item-list-item">
+                                    <p class="inv-benefits__benefits blue">100% сохранность средств</p>
+                                </li>
+                                <li class="inv-benefits-item-list-item">
+                                    <p class="inv-benefits__benefits blue">Сроки до 30 лет</p>
+                                </li>
+                                <li class="inv-benefits-item-list-item">
+                                    <p class="inv-benefits__benefits blue">Рублях или долларах</p>
+                                </li>
+                            </ul>
+                            <a href="#" class="inv-benefits-item__link btn">обсудить с экспертом</a>
+                        </div>
+                    </li>
+                    <li class="inv benefits-item">
+                        <img src="img/benefits6.webp" alt="Преимущество" class="inv-benefits-left">
+                        <div class="inv-benefits-right">
+                            <h3 class="inv-benefits-item__title">Личный финансист</h3>
+                            <p class="inv-benefits-item__text">В его лице вы получаете частного банкира, инвестиционного
+                                консультанта, а также life style менеджера и надежного компаньона. Какой бы сложности
+                                задача ни была поставлена, личный финансист приложит максимум усилий, чтобы найти для
+                                нее оптимальное решение.</p>
+                            <a href="#" class="inv-benefits-item__link btn">персональная консультация</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="work section fp-tableCell" data-anchor="6Page">
+            <div class="container work-container">
+                <h2 class="work__title">Как мы работаем</h2>
+                <ul class="work-list">
+                    <li class="work-list-item">
+                        <svg width="131" height="135" viewBox="0 0 131 135" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_b_187_95)">
+                                <path
+                                    d="M0.5 69.83C0.5 34.0254 29.6954 5 65.5 5C101.305 5 130.5 34.0254 130.5 69.83C130.5 105.635 101.305 134.66 65.5 134.66C29.6954 134.66 0.5 105.635 0.5 69.83Z"
+                                    fill="url(#paint0_radial_187_95)" />
+                                <path
+                                    d="M1 69.83C1 34.3032 29.9698 5.5 65.5 5.5C101.03 5.5 130 34.3032 130 69.83C130 105.357 101.03 134.16 65.5 134.16C29.9698 134.16 1 105.357 1 69.83Z"
+                                    stroke="url(#paint1_radial_187_95)" />
+                                <path
+                                    d="M1 69.83C1 34.3032 29.9698 5.5 65.5 5.5C101.03 5.5 130 34.3032 130 69.83C130 105.357 101.03 134.16 65.5 134.16C29.9698 134.16 1 105.357 1 69.83Z"
+                                    stroke="url(#paint2_radial_187_95)" />
+                                <path
+                                    d="M1 69.83C1 34.3032 29.9698 5.5 65.5 5.5C101.03 5.5 130 34.3032 130 69.83C130 105.357 101.03 134.16 65.5 134.16C29.9698 134.16 1 105.357 1 69.83Z"
+                                    stroke="url(#paint3_radial_187_95)" />
+                            </g>
+                            <g filter="url(#filter1_f_187_95)">
+                                <ellipse cx="65.083" cy="39.9085" rx="41.25" ry="26.5969"
+                                    fill="url(#paint4_radial_187_95)" fill-opacity="0.2" />
+                            </g>
+                            <path
+                                d="M89.767 54.8335V48.7669C89.767 45.4211 87.0461 42.7002 83.7003 42.7002H44.267C39.2499 42.7002 35.167 46.7831 35.167 51.8002V88.2002C35.167 94.8766 40.6088 97.3002 44.267 97.3002H89.767C93.1128 97.3002 95.8336 94.5793 95.8336 91.2335V60.9002C95.8336 57.5544 93.1128 54.8335 89.767 54.8335ZM83.7003 82.1335H77.6337V70.0002H83.7003V82.1335ZM44.267 54.8335C43.486 54.7986 42.7485 54.4637 42.2082 53.8987C41.6679 53.3337 41.3663 52.582 41.3663 51.8002C41.3663 51.0184 41.6679 50.2667 42.2082 49.7017C42.7485 49.1366 43.486 48.8018 44.267 48.7669H83.7003V54.8335H44.267Z"
+                                fill="#40BCE1" />
+                            <defs>
+                                <filter id="filter0_b_187_95" x="-4.5" y="0" width="140" height="139.66"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feGaussianBlur in="BackgroundImage" stdDeviation="2.5" />
+                                    <feComposite in2="SourceAlpha" operator="in"
+                                        result="effect1_backgroundBlur_187_95" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_187_95"
+                                        result="shape" />
+                                </filter>
+                                <filter id="filter1_f_187_95" x="10.8785" y="0.356989" width="108.409" height="79.1029"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                                    <feGaussianBlur stdDeviation="6.47727" result="effect1_foregroundBlur_187_95" />
+                                </filter>
+                                <radialGradient id="paint0_radial_187_95" cx="0" cy="0" r="1"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(11.3746 5) rotate(47.9449) scale(194.075 141.01)">
+                                    <stop stop-color="white" stop-opacity="0.36" />
+                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                </radialGradient>
+                                <radialGradient id="paint1_radial_187_95" cx="0" cy="0" r="1"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(-68.7194 18.2645) rotate(35.0407) scale(149.746 88.3808)">
+                                    <stop stop-color="white" />
+                                    <stop offset="1" stop-color="white" stop-opacity="0.06" />
+                                </radialGradient>
+                                <radialGradient id="paint2_radial_187_95" cx="0" cy="0" r="1"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(168.559 91.7762) rotate(161.385) scale(108.62 73.4149)">
+                                    <stop stop-color="#8470FF" />
+                                    <stop offset="1" stop-color="#865CFF" stop-opacity="0" />
+                                </radialGradient>
+                                <radialGradient id="paint3_radial_187_95" cx="0" cy="0" r="1"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(66.9154 -24.6334) rotate(47.2149) scale(72.5449 52.1428)">
+                                    <stop />
+                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                </radialGradient>
+                                <radialGradient id="paint4_radial_187_95" cx="0" cy="0" r="1"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(65.083 13.3115) rotate(90) scale(39.417 61.1406)">
+                                    <stop stop-color="white" />
+                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                </radialGradient>
+                            </defs>
+                        </svg>
+                        <p class="work-list-item__text">Человек инвестирует и сумма морозится ровно на 3 месяца</p>
+                    </li>
+                    <li class="work-list-item">
+                        <svg width="131" height="135" viewBox="0 0 131 135" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_b_187_78)">
+                                <path
+                                    d="M0.5 69.83C0.5 34.0254 29.6954 5 65.5 5C101.305 5 130.5 34.0254 130.5 69.83C130.5 105.635 101.305 134.66 65.5 134.66C29.6954 134.66 0.5 105.635 0.5 69.83Z"
+                                    fill="url(#paint0_radial_187_78)" />
+                                <path
+                                    d="M1 69.83C1 34.3032 29.9698 5.5 65.5 5.5C101.03 5.5 130 34.3032 130 69.83C130 105.357 101.03 134.16 65.5 134.16C29.9698 134.16 1 105.357 1 69.83Z"
+                                    stroke="url(#paint1_radial_187_78)" />
+                                <path
+                                    d="M1 69.83C1 34.3032 29.9698 5.5 65.5 5.5C101.03 5.5 130 34.3032 130 69.83C130 105.357 101.03 134.16 65.5 134.16C29.9698 134.16 1 105.357 1 69.83Z"
+                                    stroke="url(#paint2_radial_187_78)" />
+                                <path
+                                    d="M1 69.83C1 34.3032 29.9698 5.5 65.5 5.5C101.03 5.5 130 34.3032 130 69.83C130 105.357 101.03 134.16 65.5 134.16C29.9698 134.16 1 105.357 1 69.83Z"
+                                    stroke="url(#paint3_radial_187_78)" />
+                            </g>
+                            <g filter="url(#filter1_f_187_78)">
+                                <ellipse cx="65.083" cy="39.9085" rx="41.25" ry="26.5969"
+                                    fill="url(#paint4_radial_187_78)" fill-opacity="0.2" />
+                            </g>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M75.6117 43.0371C80.0134 43.0371 83.7612 45.8514 85.1498 49.7778H55.3895C50.9201 49.7778 46.6337 51.5533 43.4734 54.7136C40.3131 57.874 38.5376 62.1603 38.5376 66.6297V82.9086C36.5657 82.2109 34.8586 80.919 33.6514 79.2108C32.4442 77.5026 31.7963 75.4622 31.7969 73.3704V53.1482C31.7969 50.4666 32.8622 47.8948 34.7584 45.9986C36.6546 44.1024 39.2264 43.0371 41.908 43.0371H75.6117ZM89.0932 56.5186H55.3895C52.7078 56.5186 50.136 57.5839 48.2398 59.4801C46.3436 61.3763 45.2784 63.9481 45.2784 66.6297V86.8519C45.2784 89.5336 46.3436 92.1054 48.2398 94.0016C50.136 95.8978 52.7078 96.963 55.3895 96.963H89.0932C91.7748 96.963 94.3466 95.8978 96.2428 94.0016C98.139 92.1054 99.2043 89.5336 99.2043 86.8519V66.6297C99.2043 63.9481 98.139 61.3763 96.2428 59.4801C94.3466 57.5839 91.7748 56.5186 89.0932 56.5186ZM78.9821 76.7408C78.9821 78.5286 78.2719 80.2431 77.0077 81.5072C75.7436 82.7714 74.0291 83.4815 72.2413 83.4815C70.4536 83.4815 68.739 82.7714 67.4749 81.5072C66.2108 80.2431 65.5006 78.5286 65.5006 76.7408C65.5006 74.9531 66.2108 73.2385 67.4749 71.9744C68.739 70.7103 70.4536 70.0001 72.2413 70.0001C74.0291 70.0001 75.7436 70.7103 77.0077 71.9744C78.2719 73.2385 78.9821 74.9531 78.9821 76.7408Z"
+                                fill="#40BCE1" />
+                            <defs>
+                                <filter id="filter0_b_187_78" x="-4.5" y="0" width="140" height="139.66"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feGaussianBlur in="BackgroundImage" stdDeviation="2.5" />
+                                    <feComposite in2="SourceAlpha" operator="in"
+                                        result="effect1_backgroundBlur_187_78" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_187_78"
+                                        result="shape" />
+                                </filter>
+                                <filter id="filter1_f_187_78" x="10.8785" y="0.356989" width="108.409" height="79.1029"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                                    <feGaussianBlur stdDeviation="6.47727" result="effect1_foregroundBlur_187_78" />
+                                </filter>
+                                <radialGradient id="paint0_radial_187_78" cx="0" cy="0" r="1"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(11.3746 5) rotate(47.9449) scale(194.075 141.01)">
+                                    <stop stop-color="white" stop-opacity="0.36" />
+                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                </radialGradient>
+                                <radialGradient id="paint1_radial_187_78" cx="0" cy="0" r="1"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(-68.7194 18.2645) rotate(35.0407) scale(149.746 88.3808)">
+                                    <stop stop-color="white" />
+                                    <stop offset="1" stop-color="white" stop-opacity="0.06" />
+                                </radialGradient>
+                                <radialGradient id="paint2_radial_187_78" cx="0" cy="0" r="1"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(168.559 91.7762) rotate(161.385) scale(108.62 73.4149)">
+                                    <stop stop-color="#8470FF" />
+                                    <stop offset="1" stop-color="#865CFF" stop-opacity="0" />
+                                </radialGradient>
+                                <radialGradient id="paint3_radial_187_78" cx="0" cy="0" r="1"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(66.9154 -24.6334) rotate(47.2149) scale(72.5449 52.1428)">
+                                    <stop />
+                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                </radialGradient>
+                                <radialGradient id="paint4_radial_187_78" cx="0" cy="0" r="1"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(65.083 13.3115) rotate(90) scale(39.417 61.1406)">
+                                    <stop stop-color="white" />
+                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                </radialGradient>
+                            </defs>
+                        </svg>
+
+                        <p class="work-list-item__text">В течении 3х месяцев он получает исключительно % прибыли который
+                            может выводить каждый месяц</p>
+                    </li>
+                    <li class="work-list-item">
+                        <svg width="131" height="135" viewBox="0 0 131 135" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_b_187_113)">
+                                <path
+                                    d="M0.5 69.83C0.5 34.0254 29.6954 5 65.5 5C101.305 5 130.5 34.0254 130.5 69.83C130.5 105.635 101.305 134.66 65.5 134.66C29.6954 134.66 0.5 105.635 0.5 69.83Z"
+                                    fill="url(#paint0_radial_187_113)" />
+                                <path
+                                    d="M1 69.83C1 34.3032 29.9698 5.5 65.5 5.5C101.03 5.5 130 34.3032 130 69.83C130 105.357 101.03 134.16 65.5 134.16C29.9698 134.16 1 105.357 1 69.83Z"
+                                    stroke="url(#paint1_radial_187_113)" />
+                                <path
+                                    d="M1 69.83C1 34.3032 29.9698 5.5 65.5 5.5C101.03 5.5 130 34.3032 130 69.83C130 105.357 101.03 134.16 65.5 134.16C29.9698 134.16 1 105.357 1 69.83Z"
+                                    stroke="url(#paint2_radial_187_113)" />
+                                <path
+                                    d="M1 69.83C1 34.3032 29.9698 5.5 65.5 5.5C101.03 5.5 130 34.3032 130 69.83C130 105.357 101.03 134.16 65.5 134.16C29.9698 134.16 1 105.357 1 69.83Z"
+                                    stroke="url(#paint3_radial_187_113)" />
+                            </g>
+                            <g filter="url(#filter1_f_187_113)">
+                                <ellipse cx="65.083" cy="39.9085" rx="41.25" ry="26.5969"
+                                    fill="url(#paint4_radial_187_113)" fill-opacity="0.2" />
+                            </g>
+                            <path
+                                d="M57.4108 49.7778C56.3381 49.7778 55.3094 50.2039 54.5509 50.9623C53.7925 51.7208 53.3663 52.7495 53.3663 53.8222C53.3663 54.8949 53.7925 55.9236 54.5509 56.6821C55.3094 57.4405 56.3381 57.8666 57.4108 57.8666H80.0031L74.7736 63.0961C74.0369 63.8589 73.6292 64.8805 73.6384 65.941C73.6476 67.0014 74.073 68.0158 74.8229 68.7657C75.5727 69.5156 76.5871 69.9409 77.6476 69.9501C78.708 69.9593 79.7296 69.5517 80.4924 68.815L92.6258 56.6816C93.384 55.9232 93.8099 54.8946 93.8099 53.8222C93.8099 52.7498 93.384 51.7212 92.6258 50.9628L80.4924 38.8294C80.1194 38.4432 79.6731 38.135 79.1796 37.9231C78.6862 37.7111 78.1555 37.5995 77.6185 37.5949C77.0814 37.5902 76.5489 37.6925 76.0518 37.8959C75.5548 38.0993 75.1032 38.3996 74.7235 38.7793C74.3437 39.1591 74.0434 39.6106 73.84 40.1077C73.6367 40.6047 73.5344 41.1373 73.539 41.6743C73.5437 42.2113 73.6553 42.742 73.8672 43.2355C74.0792 43.7289 74.3873 44.1752 74.7736 44.5483L80.0031 49.7778H57.4108Z"
+                                fill="#40BCE1" />
+                            <path
+                                d="M73.5886 90.2222C74.6612 90.2222 75.69 89.7961 76.4484 89.0376C77.2069 88.2791 77.633 87.2504 77.633 86.1778C77.633 85.1051 77.2069 84.0764 76.4484 83.3179C75.69 82.5594 74.6612 82.1333 73.5886 82.1333H50.9963L56.2258 76.9038C56.6121 76.5308 56.9202 76.0845 57.1322 75.591C57.3441 75.0976 57.4557 74.5669 57.4604 74.0299C57.465 73.4928 57.3627 72.9603 57.1593 72.4632C56.956 71.9662 56.6557 71.5146 56.2759 71.1349C55.8962 70.7551 55.4446 70.4548 54.9476 70.2515C54.4505 70.0481 53.9179 69.9458 53.3809 69.9504C52.8439 69.9551 52.3132 70.0667 51.8198 70.2786C51.3263 70.4906 50.88 70.7987 50.5069 71.185L38.3736 83.3183C37.6154 84.0768 37.1895 85.1053 37.1895 86.1778C37.1895 87.2502 37.6154 88.2787 38.3736 89.0372L50.5069 101.171C51.2697 101.907 52.2914 102.315 53.3518 102.306C54.4123 102.296 55.4267 101.871 56.1765 101.121C56.9264 100.371 57.3517 99.357 57.361 98.2965C57.3702 97.2361 56.9625 96.2145 56.2258 95.4517L50.9963 90.2222H73.5886Z"
+                                fill="#40BCE1" />
+                            <defs>
+                                <filter id="filter0_b_187_113" x="-4.5" y="0" width="140" height="139.66"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feGaussianBlur in="BackgroundImage" stdDeviation="2.5" />
+                                    <feComposite in2="SourceAlpha" operator="in"
+                                        result="effect1_backgroundBlur_187_113" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_187_113"
+                                        result="shape" />
+                                </filter>
+                                <filter id="filter1_f_187_113" x="10.8785" y="0.356989" width="108.409" height="79.1029"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                                    <feGaussianBlur stdDeviation="6.47727" result="effect1_foregroundBlur_187_113" />
+                                </filter>
+                                <radialGradient id="paint0_radial_187_113" cx="0" cy="0" r="1"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(11.3746 5) rotate(47.9449) scale(194.075 141.01)">
+                                    <stop stop-color="white" stop-opacity="0.36" />
+                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                </radialGradient>
+                                <radialGradient id="paint1_radial_187_113" cx="0" cy="0" r="1"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(-68.7194 18.2646) rotate(35.0407) scale(149.746 88.3808)">
+                                    <stop stop-color="white" />
+                                    <stop offset="1" stop-color="white" stop-opacity="0.06" />
+                                </radialGradient>
+                                <radialGradient id="paint2_radial_187_113" cx="0" cy="0" r="1"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(168.559 91.7762) rotate(161.385) scale(108.62 73.415)">
+                                    <stop stop-color="#8470FF" />
+                                    <stop offset="1" stop-color="#865CFF" stop-opacity="0" />
+                                </radialGradient>
+                                <radialGradient id="paint3_radial_187_113" cx="0" cy="0" r="1"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(66.9154 -24.6334) rotate(47.2149) scale(72.5449 52.1428)">
+                                    <stop />
+                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                </radialGradient>
+                                <radialGradient id="paint4_radial_187_113" cx="0" cy="0" r="1"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(65.083 13.3115) rotate(90) scale(39.417 61.1406)">
+                                    <stop stop-color="white" />
+                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                </radialGradient>
+                            </defs>
+                        </svg>
+
+                        <p class="work-list-item__text">По окончанию срока он либо риинвестирует сумму , либо выводить
+                            весь свой актив</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <footer data-anchor="fivePage" class="footer section fp-tableCell">
+            <div class="container footer-container">
+                <div class="footer-wrap-top">
+                    <ul class="footer-list footer-list-left">
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-item__link">О&nbsp;компании</a>
+                            <a href="#" class="footer-list-item__link blue">Карта сайта</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-item__link">Личный финансист</a>
+                            <a href="#" class="footer-list-item__link blue">Обратная связь </a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-item__link">Банковские услуги</a>
+                            <a href="#" class="footer-list-item__link blue">Политика
+                                конфиденциальности</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-item__link">Инвестиции</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-list footer-list-right">
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-item__link blue">Для звонков из-за рубежа</a>
+                            <a href="tel:+74957800099"
+                                class="footer-list-item__link footer-list-item__link--tel">+7&nbsp;495
+                                780 00 99</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-item__link blue">Круглосуточная поддержка</a>
+                            <a href="tel:+788001001999" class="footer-list-item__link">8
+                                800&nbsp;100 19 99
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="footer_text">
+                    ООО &laquo;Компания БКС&raquo;, лицензия &#8470;&nbsp;154-04434-100000 от&nbsp;10.01.2001&nbsp;на
+                    осуществление брокерской деятельности. Выдана ФСФР. Без ограничения
+                    срока действия. <br>
+                    Банковские услуги оказывает Акционерное общество &laquo;БКС
+                    Банк&raquo;. Универсальная лицензия Банка России &#8470;&nbsp;101 от&nbsp;29.11.2018&nbsp;г. <br>
+                    В
+                    соответствии с&nbsp;требованиями Базового стандарта защиты прав и&nbsp;интересов
+                    физических лиц и&nbsp;юридических лиц-получателей финансовых услуг,
+                    оказываемых членами СРО в&nbsp;сфере финансового рынка, объединяющих
+                    Брокеров клиент может ознакомиться с&nbsp;информацией о&nbsp;ООО &laquo;Компания БКС&raquo;. <br>
+
+                    Copyright &copy;&nbsp;1995&ndash;2022. ООО &laquo;Компания Брокеркредитсервис&raquo;. Все права
+                    защищены. Любое использование материалов сайта без разрешения
+                    запрещено.
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/fullpage.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
